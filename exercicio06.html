@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+        const totalVotos = Number(prompt("Qual foi o total de votos realizados neste municipio?"))
+        const votosBrancos = Number(prompt("Dos votos totais, quantos votos foram BRANCOS?"))
+        const votosNulos = Number(prompt("Dos votos totais, quanto votos foram NULOS?"))
+        const votosValidos = totalVotos - (votosBrancos+votosNulos)
+
+        const porcBrancos = (votosBrancos * 100) / totalVotos
+        const porcNulos = (votosNulos * 100) / totalVotos
+        const porcValidos = 100 - (porcBrancos + porcNulos)
+
+        alert(`Os votos totais neste municipio foram de ${totalVotos} \n
+        Desse valor total de votos, houve ${votosBrancos} votos BRANCOS, totalizando ${porcBrancos.toFixed(2)}% do total de votos! \n
+        Também do total de votos, houve ${votosNulos} votos NULOS, totalizando ${porcNulos.toFixed(2)}% do total de votos!\n
+        No fim, o total de votos validos foram de ${votosValidos}, totalizando ${porcValidos}% do total de votos! `)
+        </script>
+    
+</body>
+</html>

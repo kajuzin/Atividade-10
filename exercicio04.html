@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    <script>
+        const valorProduto = Number(prompt("Qual foi o valor total dos produtos?"))
+        const valorDesconto = valorProduto * 0.10
+        const valorAVista =  valorProduto - valorDesconto 
+        const valorAPrazo = valorProduto/3
+
+        alert(`O valor total dos produtos são de R$ ${valorProduto.toFixed(2)}! \n
+        O valor à vista, aplicando o cupom de desconto de 10%, fica no valor de R$ ${valorAVista.toFixed(2)} \n
+        O valor da compra à prazo, pode ser divida em 3x e não tem desconto, ficando o valor de cada parcela de R$ ${valorAPrazo.toFixed(2)}`)
+    </script>
+    
+</body>
+</html>
